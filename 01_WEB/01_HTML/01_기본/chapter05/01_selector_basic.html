@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: red;
+        background-color: orange;
+      }
+      div {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    Cascading Style Sheet
+    -html문서의 스타일을 정의하는 시트언어
+
+    1. 외부 스타일 시트
+    -별도의 css를 생성하여 html문서와 연결
+    -유지보수 하기 쉬움
+
+    2.내부 스타일 시트
+    -html문서의 head시트 내에 style태그를 사용하여 css정의
+
+    3. 인라인 스타일
+    -html요소의 속성을 이용해 직접 스타일을 적용
+    -->
+    <!-- 좁은 스타일이 우선순위로 여겨짐
+    1. !important - 가장 높은 우선순위
+    2. 인라인 스타일
+    3. 아이디 선택자
+    4. 클래스 선택자
+    5. 태그 선택자 
+    6. 전체 선택자 *
+    => 동일한 우선순위일 경우에는 나중에 선언된 스타일이 적용된다.
+    -->
+    <div>
+      <h1>CSS3 선택자 기본</h1>
+      <h2>우선순위 테스트</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03.pizza</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <label for="name">고객명 :</label>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="number">전화번호 :</label>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">E-mail :</label>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td class="class2">
+          <label for="name">피자선택 :</label>
+          <select name="" id="">
+            <optgroup>
+              <option value="">피자를 선택하세요</option>
+              <option value="">콤비네이션</option>
+              <option value="">페퍼로니</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <fieldset>
+      <legend>피자사이즈</legend>
+      <table>
+        <tr>
+          <td><input type="radio" />small</td>
+        </tr>
+        <tr>
+          <td><input type="radio" />medium</td>
+        </tr>
+        <tr>
+          <td><input type="radio" />large</td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>토핑선택</legend>
+      <table>
+        <tr>
+          <td><input type="checkbox" />베이컨</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" />치즈</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" />양파</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" />버섯</td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <table>
+      <tr>
+        <td>
+          <label for="time">희망배송시간 :</label>
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="comment">배송시 요청사항 :</label>
+          <textarea rows="5" cols="20"> </textarea>
+        </td>
+      </tr>
+    </table>
+    <input type="submit" value="주문하기" />
+  </body>
+</html>

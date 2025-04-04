@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = () => {
+        let output = '';
+
+        for (let i = 0; i < 255; i++) {
+          output += '<div></div>';
+        }
+        document.body.innerHTML = output;
+
+        const $div = document.querySelectorAll('div');
+        console.log($div);
+
+        $div.forEach((div, i) => {
+          div.style.height = '2rem';
+          console.log(i);
+
+          div.style.background = `rgba(${i},${i},${i})`;
+        });
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

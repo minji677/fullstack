@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02.pay</title>
+    <style></style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>납품자 정보</legend>
+      <table>
+        <tr>
+          <td class="tdClass">
+            <label for="name">1. 납품자명: </label>
+            <input type="text" id="name" />
+          </td>
+        </tr>
+        <tr>
+          <td class="tdClass">
+            <label for="mail">2. email : </label>
+            <input type="email" value="answer@naver.com" />
+          </td>
+        </tr>
+        <tr>
+          <td class="tdClass">
+            <label for="page">3. 홈페이지 : </label>
+            <input type="text" value="http://" />
+          </td>
+        </tr>
+        <tr>
+          <td class="tdClass">
+            <label for="where">4. 지역 </label>
+            <select name="" id="">
+              <optgroup label="지역">
+                <option value="">부산</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>납품 정보</legend>
+      <ul>
+        <li>
+          <label for="name">상품명 : </label>
+          <input type="text" id="name" />
+        </li>
+
+        <li>
+          <label for="how">납품수량 : </label>
+          <input type="text" value="최소100" />
+        </li>
+
+        <li>
+          <label for="how">납품등급 : </label>
+          <input type="range" min="0" max="100" />
+        </li>
+
+        <li>
+          <label for="how">기타사항 : </label>
+
+          <textarea rows="5" cols="20"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <div>
+      <input type="submit" value="send message" />
+    </div>
+  </body>
+</html>

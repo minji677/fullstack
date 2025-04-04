@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09_object_withForln</title>
+    <script>
+      /**
+ * 객체 생성 방법
+ * 1. 객체 리터럴 : {}를 사용하여 생성
+ * 2. 생성자함수: newObject()
+ * 3. 클래스방식
+
+    //객체 리터럴 방식
+    //   let product = {
+    //     제품명: '7d건조망고',
+    //     유형: '당절임',
+    //     성분: '망고, 설탕, 메타중아황산나트륨, 치자황색소',
+    //     원산지: '필리핀',
+    //   };
+    */
+      for (let i in product) {
+        alert(i + ':' + product[i]);
+      }
+
+      //클래스 방식
+      class Product {
+        constructor(제품명, 유형, 성분, 원산지) {
+          this.제품명 = 제품명;
+          this.유형 = 유형;
+          this.성분 = 성분;
+          this.원산지 = 원산지;
+        }
+      }
+
+      let product = new Product(
+        '7d건조망고',
+        '당절임',
+        '망고, 설탕, 메타중아황산나트륨, 치자황색소',
+        '필리핀'
+      );
+      printProducts(product);
+    </script>
+  </head>
+  <body></body>
+</html>

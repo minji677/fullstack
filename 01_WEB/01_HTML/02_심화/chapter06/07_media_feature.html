@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07_media_feature</title>
+    <style>
+      @media screen and (max-width: 767px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 959px) {
+        body {
+          background-color: green;
+        }
+      }
+      @media screen and (min-width: 796px) {
+        body {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    @media
+    css에서 다양한 미디어 타입과 장치 속성에 따라
+    스타일을 적용할 수 있게 헤주는 미디어쿼리
+
+    특징:
+    화면크기, 해상도, 방향 등에 따라 다르게 스타일을 적용할 수 있다.
+-->
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. …</p>
+  </body>
+</html>

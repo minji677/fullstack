@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*주요 display값 팀원들과 함께 조사
+        block
+        inline
+        inline-black :인라인처럼 배치는 되고, 높이와 너비 설정 가능
+        none
+        flex:레이아웃 구성을 위한 컨테이너를 설정
+        grid: 그리드기반 레이아웃 구성
+        */
+      #box {
+        width: 250px;
+        height: 30px;
+        display: inline;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <span style="border: 1px solid black; padding: 5px">
+      <span>더미객체</span>
+      <div id="box">대상객체</div>
+      <span>더미객체</span>
+    </span>
+  </body>
+</html>
